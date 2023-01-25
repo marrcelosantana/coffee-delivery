@@ -5,6 +5,7 @@ import {
   Bank,
   Money,
 } from "phosphor-react";
+import { CoffeeCard } from "../../components/CoffeeCard";
 
 import {
   AddressContainer,
@@ -14,6 +15,7 @@ import {
   Form,
   PaymentContainer,
   PaymentMethods,
+  Footer,
 } from "./styles";
 
 export function Checkout() {
@@ -21,6 +23,7 @@ export function Checkout() {
     <CheckoutContainer>
       <div>
         <h2>Complete seu pedido</h2>
+
         <AddressContainer>
           <Info>
             <MapPin size={22} />
@@ -51,7 +54,7 @@ export function Checkout() {
                 required
                 type="text"
                 id="complement"
-                placeholder="Complemento"
+                placeholder="Complemento (Opcional)"
                 style={{ width: "100%" }}
               />
             </div>
@@ -109,7 +112,33 @@ export function Checkout() {
 
       <div>
         <h2>Cafés selecionados</h2>
-        <OrderContainer>Conteúdo</OrderContainer>
+
+        <OrderContainer>
+          <CoffeeCard />
+          <div className="divider" />
+
+          <CoffeeCard />
+          <div className="divider" />
+
+          <Footer>
+            <div className="total-items">
+              <span>Total de itens</span>
+              <span>R$ 19,80</span>
+            </div>
+
+            <div className="delivery">
+              <span>Entrega</span>
+              <span>R$ 3,50</span>
+            </div>
+
+            <div className="final-total">
+              <span>Total</span>
+              <span>R$ 23,30</span>
+            </div>
+
+            <button>CONFIRMAR PEDIDO</button>
+          </Footer>
+        </OrderContainer>
       </div>
     </CheckoutContainer>
   );

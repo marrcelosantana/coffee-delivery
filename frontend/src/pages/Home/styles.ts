@@ -21,7 +21,7 @@ export const ListCardContainer = styled.div`
   .list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 3rem;
+    gap: 4rem;
   }
 
   @media (max-width: 414px) {

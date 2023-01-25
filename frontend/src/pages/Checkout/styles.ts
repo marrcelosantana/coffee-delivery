@@ -13,7 +13,6 @@ export const CheckoutContainer = styled.form`
 
 export const AddressContainer = styled.div`
   width: 40rem;
-  /* height: 37rem; */
   background: ${(props) => props.theme["gray-background"]};
 
   display: flex;
@@ -109,9 +108,50 @@ export const PaymentMethods = styled.div`
 
 export const OrderContainer = styled.div`
   width: 28rem;
-  height: 31.125rem;
   background-color: ${(props) => props.theme["gray-background"]};
   border-radius: 6px 44px;
 
+  display: flex;
+  flex-direction: column;
   padding: 2.5rem;
+
+  .divider {
+    width: 100%;
+    border: 0.5px solid ${(props) => props.theme["gray-300"]};
+    margin: 0.5rem 0 0.5rem 0;
+  }
+`;
+
+export const Footer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  .total-items,
+  .delivery,
+  .final-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .final-total {
+    font-weight: bold;
+    color: ${(props) => props.theme["base-text"]};
+    font-size: 1.25rem;
+  }
+
+  button {
+    width: 100%;
+    height: 2.875rem;
+    background: ${(props) => props.theme["yellow-normal"]};
+    color: white;
+
+    border: 0;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
 `;
