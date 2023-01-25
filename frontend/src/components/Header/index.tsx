@@ -14,13 +14,13 @@ export function Header() {
       <img src={logo} alt="" />
       <HeaderContent>
         <LocationContainer>
-          <MapPin size={24} weight="fill" />
+          <MapPin size={22} weight="fill" />
           <span>Fortaleza, CE</span>
         </LocationContainer>
 
         <ShoppingCartContainer>
           <button type="button">
-            <ShoppingCartSimple size={24} weight="fill" />
+            <ShoppingCartSimple size={22} weight="fill" />
           </button>
 
           <div className="numberOfProducts">

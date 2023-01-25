@@ -13,12 +13,12 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     -webkit-font-smoothing: antialiased;
-    background: ${(props) => props.theme.baseBackground};
-    color: ${(props) => props.theme.baseText}
+    background: ${(props) => props.theme["base-background"]};
+    color: ${(props) => props.theme["base-text"]}
   }
 
   body, input, textarea, button {
-    font-family: "Baloo 2", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 1rem;
   }

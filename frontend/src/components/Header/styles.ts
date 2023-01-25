@@ -5,8 +5,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 10rem;
-  margin-bottom: 2rem;
+  padding: 2% 15%;
 `;
 
 export const HeaderContent = styled.div`
@@ -17,9 +16,8 @@ export const HeaderContent = styled.div`
 `;
 
 export const LocationContainer = styled.div`
-  background: ${(props) => props.theme.purpleLight};
-  color: ${(props) => props.theme.purpleDark};
-  font-family: "Roboto", sans-serif;
+  background: ${(props) => props.theme["purple-light"]};
+  color: ${(props) => props.theme["purple-dark"]};
   font-size: 0.875rem;
   padding: 0.5rem;
   gap: 0.25rem;
@@ -30,7 +28,7 @@ export const LocationContainer = styled.div`
   border-radius: 8px;
 
   svg {
-    color: ${(props) => props.theme.purpleDark};
+    color: ${(props) => props.theme["purple-normal"]};
   }
 `;
 
@@ -39,11 +37,26 @@ export const ShoppingCartContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  .numberOfProducts {
-    margin-top: -1.5rem;
-    margin-left: -0.7rem;
+  button {
+    background: ${(props) => props.theme["yellow-light"]};
+    border: 0;
+    padding: 0.5rem;
 
-    background: ${(props) => props.theme.yellowDark};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+    svg {
+      color: ${(props) => props.theme["yellow-dark"]};
+    }
+  }
+
+  .numberOfProducts {
+    margin-top: -2rem;
+    margin-left: -0.75rem;
+
+    background: ${(props) => props.theme["yellow-dark"]};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,20 +67,5 @@ export const ShoppingCartContainer = styled.div`
     color: ${(props) => props.theme.white};
 
     font-size: 0.75rem;
-  }
-
-  button {
-    background: ${(props) => props.theme.yellowLight};
-    border: 0;
-    padding: 0.5rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-
-    svg {
-      color: ${(props) => props.theme.yellowDark};
-    }
   }
 `;
