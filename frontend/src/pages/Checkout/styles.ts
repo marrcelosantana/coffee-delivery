@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CheckoutContainer = styled.div`
+export const CheckoutContainer = styled.form`
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
@@ -45,7 +45,7 @@ export const Info = styled.div`
   }
 `;
 
-export const Form = styled.form`
+export const Form = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -58,6 +58,7 @@ export const Form = styled.form`
     border: 1px solid ${(props) => props.theme["gray-300"]};
     padding: 0 2%;
     font-size: 0.875rem;
+    color: ${(props) => props.theme["base-text"]};
 
     &::placeholder {
       color: ${(props) => props.theme["base-label"]};
@@ -73,7 +74,38 @@ export const Form = styled.form`
   }
 `;
 
-export const PaymentContainer = styled.div``;
+export const PaymentContainer = styled.div`
+  background: ${(props) => props.theme["gray-background"]};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+`;
+
+export const PaymentMethods = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  div {
+    width: 11.167rem;
+    height: 3.188rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+
+    font-size: 0.75rem;
+    color: ${(props) => props.theme["base-text"]};
+    background-color: ${(props) => props.theme["gray-300"]};
+    border: 0;
+    border-radius: 8px;
+  }
+`;
 
 export const OrderContainer = styled.div`
   width: 28rem;

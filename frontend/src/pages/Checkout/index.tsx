@@ -1,4 +1,10 @@
-import { MapPin } from "phosphor-react";
+import {
+  MapPin,
+  CurrencyDollar,
+  CreditCard,
+  Bank,
+  Money,
+} from "phosphor-react";
 
 import {
   AddressContainer,
@@ -7,6 +13,7 @@ import {
   Info,
   Form,
   PaymentContainer,
+  PaymentMethods,
 } from "./styles";
 
 export function Checkout() {
@@ -19,7 +26,7 @@ export function Checkout() {
             <MapPin size={22} />
             <div className="description">
               <h5>Endereço de entrega</h5>
-              <p>Informe o endereço onde deseja receber o pedido</p>
+              <p>Informe o endereço onde deseja receber o pedido.</p>
             </div>
           </Info>
 
@@ -69,7 +76,35 @@ export function Checkout() {
           </Form>
         </AddressContainer>
 
-        <PaymentContainer>Conteúdo</PaymentContainer>
+        <PaymentContainer>
+          <Info>
+            <CurrencyDollar size={22} color="#4B2995" />
+            <div className="description">
+              <h5>Pagamento</h5>
+              <p>
+                O pagamento é feito na entrega. Escolha a forma que deseja
+                pagar.
+              </p>
+            </div>
+          </Info>
+
+          <PaymentMethods>
+            <div>
+              <CreditCard size={14} color="#4B2995" />
+              <span>CARTÃO DE CRÉDITO</span>
+            </div>
+
+            <div>
+              <Bank size={14} color="#4B2995" />
+              <span>CARTÃO DE DÉBITO</span>
+            </div>
+
+            <div>
+              <Money size={14} color="#4B2995" />
+              <span>DINHEIRO</span>
+            </div>
+          </PaymentMethods>
+        </PaymentContainer>
       </div>
 
       <div>
