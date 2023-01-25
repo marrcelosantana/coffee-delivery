@@ -8,7 +8,16 @@ export function Home() {
       <Intro />
       <ListCardContainer>
         <h1>Nossos cafés</h1>
-        <CoffeeCard />
+        <div className="list">
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+        </div>
       </ListCardContainer>
     </HomeContainer>
   );

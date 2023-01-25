@@ -52,6 +52,7 @@ export const ActionsContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 0 5%;
 `;
 
 export const Price = styled.div`
@@ -78,12 +79,12 @@ export const ButtonsContainer = styled.div`
   gap: 1rem;
 
   .numberOfCoffees {
+    width: 4.5rem;
+    height: 2.375rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background: ${(props) => props.theme["gray-300"]};
-    width: 4.5rem;
-    height: 2.375rem;
     border-radius: 8px;
 
     button {
@@ -100,7 +101,6 @@ export const ShoppingCartButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: 0;
   background: ${(props) => props.theme["purple-dark"]};
   border-radius: 8px;

@@ -17,4 +17,10 @@ export const ListCardContainer = styled.div`
     color: ${(props) => props.theme["base-subtitle"]};
     font-size: 2rem;
   }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+  }
 `;

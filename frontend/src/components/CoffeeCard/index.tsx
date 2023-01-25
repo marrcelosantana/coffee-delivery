@@ -35,7 +35,6 @@ export function CoffeeCard() {
               <Plus weight="bold" size={14} />
             </button>
           </div>
-
           <ShoppingCartButton>
             <ShoppingCartSimple weight="fill" color="white" size={22} />
           </ShoppingCartButton>
