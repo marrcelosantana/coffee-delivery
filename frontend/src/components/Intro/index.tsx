@@ -53,7 +53,7 @@ export function Intro() {
           </div>
         </ItemsContainer>
       </IntroInfo>
-      <img src={introImg} alt="" />
+      <img src={introImg} alt="" className="introImg" />
     </IntroContainer>
   );
 }

@@ -5,6 +5,13 @@ export const IntroContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
+  @media (max-width: 414px) {
+    margin-top: 2rem;
+    .introImg {
+      display: none;
+    }
+  }
 `;
 
 export const IntroInfo = styled.div`
@@ -24,6 +31,17 @@ export const IntroInfo = styled.div`
     color: ${(props) => props.theme["base-subtitle"]};
     margin-bottom: 2rem;
   }
+
+  @media (max-width: 414px) {
+    h1 {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const ItemsContainer = styled.div`
@@ -37,9 +55,13 @@ export const ItemsContainer = styled.div`
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    gap: 1rem;
-    font-size: 14px;
+    font-size: 0.875rem;
     width: 50%;
+    gap: 1rem;
+
+    @media (max-width: 414px) {
+      font-size: 0.625rem;
+    }
   }
 `;
 

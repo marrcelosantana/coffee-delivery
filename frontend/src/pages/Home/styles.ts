@@ -23,4 +23,15 @@ export const ListCardContainer = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 3rem;
   }
+
+  @media (max-width: 414px) {
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .list {
+      margin-left: 1.5rem;
+    }
+  }
 `;

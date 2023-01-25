@@ -45,6 +45,10 @@ export const CoffeeInfo = styled.div`
     color: ${(props) => props.theme["base-label"]};
     text-align: center;
   }
+
+  @media (max-width: 414px) {
+    margin-bottom: 0.2rem;
+  }
 `;
 
 export const ActionsContainer = styled.div`

@@ -6,6 +6,10 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 2% 15%;
+
+  @media (max-width: 414px) {
+    padding: 2% 5%;
+  }
 `;
 
 export const HeaderContent = styled.div`
