@@ -8,6 +8,7 @@ export const defaultTheme = {
   "gray-background": "#F3F2F2",
   "base-background": "#FAFAFA",
   "gray-300": "#E6E5E5",
+  "gray-400": "#EEEDED",
 
   "purple-normal": "#8047F8",
   "purple-light": "#EBE5F9",

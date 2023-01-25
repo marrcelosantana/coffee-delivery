@@ -14,7 +14,7 @@ export function CoffeeCard() {
   return (
     <CardContainer>
       <img src={coffeImg} alt="" />
-      <div className="coffeeStatus">TRADICIONAL</div>
+      <div className="coffee-status">TRADICIONAL</div>
       <CoffeeInfo>
         <h2>Expresso Tradicional</h2>
         <p>O tradicional café feito com água quente e grãos moídos</p>
@@ -26,7 +26,7 @@ export function CoffeeCard() {
           <p>9,90</p>
         </Price>
         <ButtonsContainer>
-          <div className="numberOfCoffees">
+          <div className="number-of-coffees">
             <button>
               <Minus weight="bold" size={14} />
             </button>

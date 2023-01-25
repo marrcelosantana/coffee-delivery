@@ -16,7 +16,7 @@ export const CardContainer = styled.div`
     margin-top: -12%;
   }
 
-  .coffeeStatus {
+  .coffee-status {
     background: ${(props) => props.theme["yellow-light"]};
     font-size: 0.75rem;
     color: ${(props) => props.theme["yellow-dark"]};
@@ -82,7 +82,7 @@ export const ButtonsContainer = styled.div`
   justify-content: center;
   gap: 1rem;
 
-  .numberOfCoffees {
+  .number-of-coffees {
     width: 4.5rem;
     height: 2.375rem;
     display: flex;
