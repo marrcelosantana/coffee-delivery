@@ -86,7 +86,6 @@ export const PaymentMethods = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
 
   div {
     width: 11.167rem;

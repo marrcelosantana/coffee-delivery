@@ -5,6 +5,7 @@ import {
   Bank,
   Money,
 } from "phosphor-react";
+import { Link } from "react-router-dom";
 import { CoffeeCard } from "../../components/CoffeeCard";
 
 import {
@@ -136,7 +137,9 @@ export function Checkout() {
               <span>R$ 23,30</span>
             </div>
 
-            <button>CONFIRMAR PEDIDO</button>
+            <Link to="/success" style={{ textDecoration: "none" }}>
+              <button>CONFIRMAR PEDIDO</button>
+            </Link>
           </Footer>
         </OrderContainer>
       </div>

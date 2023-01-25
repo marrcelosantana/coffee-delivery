@@ -1,4 +1,5 @@
 import { ShoppingCartSimple, Minus, Plus } from "phosphor-react";
+import { Link } from "react-router-dom";
 import coffeImg from "../../assets/coffees/expresso-tradicional.png";
 
 import {
@@ -35,9 +36,12 @@ export function CoffeeBanner() {
               <Plus weight="bold" size={14} />
             </button>
           </div>
-          <ShoppingCartButton>
-            <ShoppingCartSimple weight="fill" color="white" size={22} />
-          </ShoppingCartButton>
+
+          <Link to="/checkout">
+            <ShoppingCartButton>
+              <ShoppingCartSimple weight="fill" color="white" size={22} />
+            </ShoppingCartButton>
+          </Link>
         </ButtonsContainer>
       </ActionsContainer>
     </CardContainer>
