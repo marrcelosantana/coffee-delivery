@@ -27,8 +27,9 @@ export const SuccessContent = styled.div`
 
 export const OrderInfo = styled.div`
   border: 1px solid ${(props) => props.theme["purple-normal"]};
-  padding: 2.5rem;
   border-radius: 6px 36px;
+
+  padding: 2.5rem;
   margin-top: 2rem;
 
   display: flex;
