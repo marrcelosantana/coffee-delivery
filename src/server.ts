@@ -1,19 +1,19 @@
 import { Coffee } from "./models/Coffee";
 
-import tradicionalImg from "./assets/coffees/expresso-tradicional.png";
-import americanoImg from "./assets/coffees/expresso-americanol.png";
-import cremosoImg from "./assets/coffees/expresso-cremoso.png";
-import geladoImg from "./assets/coffees/expresso-gelado.png";
-import cafeComLeiteImg from "./assets/coffees/cafe-com-leite.png";
-import latteImg from "./assets/coffees/latte.png";
-import capuccinoImg from "./assets/coffees/capuccino.png";
-import macchiatoImg from "./assets/coffees/macchiato.png";
-import mocaccinoImg from "./assets/coffees/mocaccino.png";
-import chocolateQuenteImg from "./assets/coffees/chocolate-quente.png";
-import irlandesImg from "./assets/coffees/irlandes.png";
-import cubanoImg from "./assets/coffees/cubano.png";
-import havaianoImg from "./assets/coffees/havaiano.png";
-import arabeImg from "./assets/coffees/arabe.png";
+import tradicionalImg from "../public/coffees/expresso-tradicional.png";
+import americanoImg from "../public/coffees/expresso-americano.png";
+import cremosoImg from "../public/coffees/expresso-cremoso.png";
+import geladoImg from "../public/coffees/expresso-gelado.png";
+import cafeComLeiteImg from "../public/coffees/cafe-com-leite.png";
+import latteImg from "../public/coffees/latte.png";
+import capuccinoImg from "../public/coffees/capuccino.png";
+import macchiatoImg from "../public/coffees/macchiato.png";
+import mocaccinoImg from "../public/coffees/mocaccino.png";
+import chocolateQuenteImg from "../public/coffees/chocolate-quente.png";
+import irlandesImg from "../public/coffees/irlandes.png";
+import cubanoImg from "../public/coffees/cubano.png";
+import havaianoImg from "../public/coffees/havaiano.png";
+import arabeImg from "../public/coffees/arabe.png";
 
 export const coffees: Coffee[] = [
   {

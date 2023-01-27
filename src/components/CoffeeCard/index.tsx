@@ -1,5 +1,5 @@
 import { Minus, Plus, Trash } from "phosphor-react";
-import coffeeImg from "../../assets/coffees/expresso-tradicional.png";
+import coffeeImg from "../../../public/coffees/expresso-tradicional.png";
 
 import {
   Actions,

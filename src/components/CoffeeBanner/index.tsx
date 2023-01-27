@@ -1,6 +1,6 @@
 import { ShoppingCartSimple, Minus, Plus } from "phosphor-react";
 import { Link } from "react-router-dom";
-import coffeImg from "../../assets/coffees/expresso-tradicional.png";
+import { Coffee } from "../../models/Coffee";
 
 import {
   ActionsContainer,
@@ -11,20 +11,24 @@ import {
   ShoppingCartButton,
 } from "./styles";
 
-export function CoffeeBanner() {
+interface CoffeeBannerProps {
+  coffee: Coffee;
+}
+
+export function CoffeeBanner({ coffee }: CoffeeBannerProps) {
   return (
     <CardContainer>
-      <img src={coffeImg} alt="" />
-      <div className="coffee-status">TRADICIONAL</div>
+      <img src={coffee.bannerUrl} alt="" />
+      <div className="coffee-status">{coffee.tags[0]}</div>
       <CoffeeInfo>
-        <h2>Expresso Tradicional</h2>
-        <p>O tradicional café feito com água quente e grãos moídos</p>
+        <h2>{coffee.name}</h2>
+        <p>{coffee.description}</p>
       </CoffeeInfo>
 
       <ActionsContainer>
         <Price>
           <span>R$</span>
-          <p>9,90</p>
+          <p>{coffee.price}</p>
         </Price>
         <ButtonsContainer>
           <div className="number-of-coffees">

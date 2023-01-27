@@ -1,5 +1,7 @@
 import { CoffeeBanner } from "../../components/CoffeeBanner";
 import { Intro } from "../../components/Intro";
+import { coffees } from "../../server";
+
 import { HomeContainer, ListCardContainer } from "./styles";
 
 export function Home() {
@@ -9,14 +11,17 @@ export function Home() {
       <ListCardContainer>
         <h1>Nossos cafés</h1>
         <div className="list">
+          {coffees.map((coffee) => (
+            <CoffeeBanner coffee={coffee} />
+          ))}
+          {/* <CoffeeBanner />
           <CoffeeBanner />
           <CoffeeBanner />
           <CoffeeBanner />
           <CoffeeBanner />
           <CoffeeBanner />
           <CoffeeBanner />
-          <CoffeeBanner />
-          <CoffeeBanner />
+          <CoffeeBanner /> */}
         </div>
       </ListCardContainer>
     </HomeContainer>
