@@ -16,11 +16,18 @@ export const CardContainer = styled.div`
     margin-top: -12%;
   }
 
+  .tagsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.313rem;
+  }
+
   .coffee-status {
     background: ${(props) => props.theme["yellow-light"]};
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     color: ${(props) => props.theme["yellow-dark"]};
-    padding: 0.5rem 2rem;
+    padding: 0.4rem 1rem;
     font-weight: bold;
     border-radius: 8px;
   }
@@ -70,7 +77,7 @@ export const Price = styled.div`
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Baloo 2";
     font-weight: bold;
   }

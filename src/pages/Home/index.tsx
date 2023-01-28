@@ -12,16 +12,8 @@ export function Home() {
         <h1>Nossos cafés</h1>
         <div className="list">
           {coffees.map((coffee) => (
-            <CoffeeBanner coffee={coffee} />
+            <CoffeeBanner coffee={coffee} key={coffee.id} />
           ))}
-          {/* <CoffeeBanner />
-          <CoffeeBanner />
-          <CoffeeBanner />
-          <CoffeeBanner />
-          <CoffeeBanner />
-          <CoffeeBanner />
-          <CoffeeBanner />
-          <CoffeeBanner /> */}
         </div>
       </ListCardContainer>
     </HomeContainer>

@@ -1,4 +1,6 @@
 import { MapPin, Timer, CurrencyDollar } from "phosphor-react";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import successImg from "../../assets/illustration.png";
 
 import {
@@ -9,7 +11,17 @@ import {
   SuccessContent,
 } from "./styles";
 
+type CoffeeParams = {
+  id: string;
+};
+
 export function Success() {
+  const params = useParams<CoffeeParams>();
+
+  useEffect(() => {
+    console.log("Success ID: " + params.id);
+  });
+
   return (
     <SuccessContainer>
       <div className="title">

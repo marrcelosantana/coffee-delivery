@@ -107,7 +107,7 @@ export const coffees: Coffee[] = [
     tags: ["ESPECIAL", "COM LEITE"],
     bannerUrl: chocolateQuenteImg,
     quantity: 0,
-    price: 15.0,
+    price: 13.9,
   },
   {
     id: 11,
@@ -135,7 +135,7 @@ export const coffees: Coffee[] = [
     tags: ["ESPECIAL"],
     bannerUrl: arabeImg,
     quantity: 0,
-    price: 12.9,
+    price: 14.9,
   },
   {
     id: 14,

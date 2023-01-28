@@ -5,7 +5,8 @@ import {
   Bank,
   Money,
 } from "phosphor-react";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
 import { CoffeeCard } from "../../components/CoffeeCard";
 
 import {
@@ -19,7 +20,17 @@ import {
   Footer,
 } from "./styles";
 
+type CoffeeParams = {
+  id: string;
+};
+
 export function Checkout() {
+  const params = useParams<CoffeeParams>();
+
+  useEffect(() => {
+    console.log("Checkout ID: " + params.id);
+  });
+
   return (
     <CheckoutContainer>
       <div>
@@ -137,7 +148,10 @@ export function Checkout() {
               <span>R$ 23,30</span>
             </div>
 
-            <Link to="/success" style={{ textDecoration: "none" }}>
+            <Link
+              to={`/success/${params.id}`}
+              style={{ textDecoration: "none" }}
+            >
               <button>CONFIRMAR PEDIDO</button>
             </Link>
           </Footer>
